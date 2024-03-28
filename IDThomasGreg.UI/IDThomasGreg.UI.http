@@ -1,0 +1,6 @@
+@IDThomasGreg.UI_HostAddress = http://localhost:5080
+
+GET {{IDThomasGreg.UI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
