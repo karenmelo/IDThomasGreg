@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IDThomasGreg.Data\IDThomasGreg.Data.csproj" />
+    <ProjectReference Include="..\IDThomasGreg.IoC\IDThomasGreg.IoC.csproj" />
   </ItemGroup>
 
 </Project>
