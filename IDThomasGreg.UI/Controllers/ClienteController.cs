@@ -1,9 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IDThomasGreg.Domain.Entities;
+using IDThomasGreg.Domain.Services.Interfaces;
+using IDThomasGreg.UI.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace IDThomasGreg.UI.Controllers
 {
     public class ClienteController : Controller
     {
+        private readonly IClienteService _clienteService;
+
+        public ClienteController(IClienteService clienteService)
+        {
+            _clienteService = clienteService;
+        }
+
         [HttpGet("buscar_cliente")]
         public async Task<IActionResult> Get()
         {
@@ -11,8 +21,16 @@ namespace IDThomasGreg.UI.Controllers
         }
 
         [HttpPost("criar_cliente")]
-        public async Task<IActionResult> Post()
+        public IActionResult Post(ClienteModel clienteModel)
         {
+            var cliente = new Cliente
+            (
+                clienteModel.Nome,
+                clienteModel.Email,
+                clienteModel.Logotipo,
+                new List<Endereco> { new Endereco { Logradouro = clienteModel.Logradouro } }
+            );
+            _clienteService.Criar(cliente);
             return View();
         }
 

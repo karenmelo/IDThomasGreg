@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDThomasGreg.UI", "IDThomasGreg.UI\IDThomasGreg.UI.csproj", "{A9D0F0C5-BA58-4E00-8DF5-A1D15E74762D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDThomasGreg.UI", "IDThomasGreg.UI\IDThomasGreg.UI.csproj", "{A9D0F0C5-BA58-4E00-8DF5-A1D15E74762D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDThomasGreg.Domain", "IDThomasGreg.Domain\IDThomasGreg.Domain.csproj", "{1160F29B-D537-4CE7-B14D-515ACF680445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDThomasGreg.Domain", "IDThomasGreg.Domain\IDThomasGreg.Domain.csproj", "{1160F29B-D537-4CE7-B14D-515ACF680445}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDThomasGreg.IoC", "IDThomasGreg.IoC\IDThomasGreg.IoC.csproj", "{7D72F153-DA43-4A0C-BB04-1422DEF04351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDThomasGreg.IoC", "IDThomasGreg.IoC\IDThomasGreg.IoC.csproj", "{7D72F153-DA43-4A0C-BB04-1422DEF04351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDThomasGreg.Data", "IDThomasGreg.Data\IDThomasGreg.Data.csproj", "{95053FBA-8EC0-4908-878B-AA776B094704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDThomasGreg.Data", "IDThomasGreg.Data\IDThomasGreg.Data.csproj", "{95053FBA-8EC0-4908-878B-AA776B094704}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{FEF33863-8C3A-40F0-8CC8-DA588C7DD0BA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\dbo.AtualizaCliente.sql = ..\..\..\Downloads\dbo.AtualizaCliente.sql
+		..\..\..\Downloads\dbo.CriarCliente.sql = ..\..\..\Downloads\dbo.CriarCliente.sql
+		..\..\..\Downloads\dbo.RemoverCliente.sql = ..\..\..\Downloads\dbo.RemoverCliente.sql
+		..\..\..\Downloads\dbo.VisualizaCliente.sql = ..\..\..\Downloads\dbo.VisualizaCliente.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
